@@ -16,8 +16,9 @@ function MovieDetails(props) {
   
 
   return (
-    <Link to={`/movies/${id}`}>
+    
       <div className="movie-card">
+        <Link to={`/movies/${id}`}>
         <h2>{title}</h2>
         <div className="movie-director">
           Director: <em>{director}</em>
@@ -25,7 +26,8 @@ function MovieDetails(props) {
         <div className="movie-metascore">
           Metascore: <strong>{metascore}</strong>
         </div>
+        </Link>
       </div>
-    </Link>
+    
   );
 }
